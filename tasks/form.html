@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="form.css">
 
-    <title>Form</title>
+    <title>Inputs</title>
 </head>
 <body>
 
@@ -16,43 +16,67 @@
         <div class="form">
     
             <div class="inputs">
-                Name: <input type="text">   <br>
+                <div class="name">Name</div>
+                <div class="content">
+                    <input type="text">   
+                </div>
             </div>
             
+            <div class="inputs">
+                <div class="name">Gender</div>
+                <div class="content">Male<input type="radio" name="gender" id="m"> <br> Female<input type="radio" name="gender" id="f">   </div>
+            </div>            
             
             <div class="inputs">
-                Gender: Male<input type="radio" name="gender" id="m"> Female<input type="radio" name="gender" id="f">   <br>
+                <div class="name">Checkbox</div>
+                <div class="content">
+                    <label class="block" for="num"> 1 <input type="checkbox" name="num" id="1"> </label>
+                    <label class="block" for="num"> 2 <input type="checkbox" name="num" id="2"> </label>
+                    <label class="block" for="num"> 3 <input type="checkbox" name="num" id="3"> </label>
+                </div>
+            </div>            
+            
+            <div class="inputs">
+                <div class="name">Color</div>
+                <div class="content"><input type="color" name="color" >   </div>
+            </div>            
+            
+            <div class="inputs">
+                <div class="name">Date</div>
+                <div class="content"><input type="date" name="date">   </div>
             </div>
-            
+                        
+            <div class="inputs">
+                <div class="name">File</div>
+                <div class="content"><input type="file" name="file">   </div>
+            </div>            
             
             <div class="inputs">
-                1 <input type="checkbox" name="num" id="1"> 2 <input type="checkbox" name="num" id="2"> 3 <input type="checkbox" name="num" id="3"> <br>
+                <div class="name">Password</div>
+                <div class="content"><input type="password" name="pass">   </div>
+            </div>            
+            
+            <div class="inputs">
+                <div class="name">Special Buttons</div>
+                <div class="content">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </div>
             </div>
-            
-            
+
             <div class="inputs">
-                Color: <input type="color" name="color" >   <br>
+                <div class="name">DateTime</div>
+                <div class="content"><input type="datetime" name="datetime" id="datetime"></div>
             </div>
-            
-            
+
             <div class="inputs">
-                Date: <input type="date" name="date">   <br>
+                <div class="name">Email</div>
+                <div class="content"><input type="email" name="email" id="email"></div>
             </div>
-            
-            
+
             <div class="inputs">
-                File: <input type="file" name="file">   <br>
-            </div>
-            
-            
-            <div class="inputs">
-                Password: <input type="password" name="pass">   <br>
-            </div>
-            
-            
-            <div class="inputs">
-                <input type="reset" value="Reset">
-                <input type="submit" value="Submit">
+                <div class="name">Range</div>
+                <div class="content"><input type="range" name="range" id="range"></div>
             </div>
     
         </div>

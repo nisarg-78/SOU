@@ -1,12 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+}
+
 body{
-    background-color: burlywood;
+    background-color: #2b2d42;
 }
 
 .form{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    margin: 2rem;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.block{
+    display: block;
 }
 
 .inputs{
-    margin: 5px;
+    border-radius: 1em;
+    aspect-ratio: 1/1;
+    background-color: #8d99ae;
+}
+
+.name{
+    font-size: 2em;
+    height: 10%;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 2px solid white;
+}
+
+.content{
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    top: 35%;
 }
