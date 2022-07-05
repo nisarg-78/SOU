@@ -1,0 +1,27 @@
+*{
+    text-align: center;
+}
+
+.outline{
+    outline: 2px solid black;
+}
+
+.blue{
+    background-color: lightblue;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.red{
+    background-color: lightcoral;
+}
+
+.orange{
+    background-color: lightsalmon;
+}
+
+.skyblue{
+    background-color: lightskyblue;
+}
