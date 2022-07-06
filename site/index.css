@@ -1,0 +1,56 @@
+*{
+    /* font-family: 'Roboto', sans-serif; */
+    padding: 0%;
+    margin: 0%;
+}
+
+.containerr{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/trees-top-down.jpeg');
+    background-size: cover;
+}
+
+
+nav{
+    color: white;
+}
+
+.nav-ul{
+    list-style-type: none;
+    padding: 1em;
+}
+.nav-ul li{
+    display: inline;
+}
+
+
+
+.second p{
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    padding-top: 5em;
+    font-size: 3em;
+}
+
+.btn{
+    width: 6em;
+    margin-right: 1em;
+    transition: all 0.2s ease;
+}
+
+.join{
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.two{
+    background: url('./assets/hand.jpg');
+    background-size: cover;
+    height: 100vh;
+}
