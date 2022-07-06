@@ -1,38 +1,59 @@
 *{
+    /* outline: 1px solid gold; */
     /* font-family: 'Roboto', sans-serif; */
     padding: 0%;
     margin: 0%;
 }
 
+.outline{
+    outline: 1px solid white;
+}
+
 .containerr{
-    width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/trees-top-down.jpeg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('./assets/trees-top-down.jpeg');
     background-size: cover;
 }
 
-
 nav{
-    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.308);
+    background-color: rgba(240, 248, 255, 0.05);
+    backdrop-filter: blur(5px);
+}
+
+.navbar-custom {
+    background-color: transparent;
+}
+
+.navbar-custom .navbar-text {
+    color: black;
 }
 
 .nav-ul{
     list-style-type: none;
     padding: 1em;
 }
+
 .nav-ul li{
     display: inline;
 }
 
 
 
-.second p{
+.text1{
     font-weight: 100;
     text-align: center;
     color: white;
-    padding-top: 5em;
+    padding-top: 7em;
     font-size: 3em;
+    margin-bottom: 2em;
 }
+
+#line1{
+    font-weight: 800;
+    margin-bottom: 0.5em;
+}
+
 
 .btn{
     width: 6em;
@@ -49,8 +70,39 @@ nav{
     transform: scale(1.1);
 }
 
-.two{
-    background: url('./assets/hand.jpg');
+#img2{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/grass.jpg');
+    min-height: 100vh;
     background-size: cover;
-    height: 100vh;
+    text-align: center;
 }
+
+#text2{
+    display: inline-block;
+    margin: 1em 0;
+    font-family: 'Finlandica', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 5em;
+}
+
+#boxes{
+    color: white;
+}
+
+.box p{
+    border-bottom: 1px solid white;
+    padding-bottom: 00.5em;
+    font-weight: bold;
+}
+
+.box{
+    padding: 0.5em;
+    margin: 1em;
+    font-size: 1.5em;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
