@@ -1,4 +1,4 @@
-*{
+* {
     /* outline: 1px solid gold; */
     /* font-family: 'Roboto', sans-serif; */
     padding: 0;
@@ -6,25 +6,28 @@
 }
 
 body,
-.wrapper, 
-.wrapper2, 
-.img3-2{
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+.wrapper,
+.wrapper2,
+.img3-2 {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 /* body::-webkit-scrollbar, */
 .wrapper::-webkit-scrollbar,
 .wrapper2::-webkit-scrollbar,
-.img3-2::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+.img3-2::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
 }
 
-.outline{
+.outline {
     outline: 1px solid white;
 }
 
-.wrapper{
+.wrapper {
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
@@ -32,7 +35,7 @@ body,
 }
 
 
-.containerr{
+.containerr {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url('./assets/leaves.jpg');
     background-size: cover;
 
@@ -42,7 +45,7 @@ body,
     z-index: -1;
 }
 
-nav{
+nav {
     border-bottom: 1px solid rgba(255, 255, 255, 0.308);
     background-color: rgba(240, 248, 255, 0.05);
     backdrop-filter: blur(5px);
@@ -56,20 +59,19 @@ nav{
     color: black;
 }
 
-.nav-ul{
+.nav-ul {
     list-style-type: none;
     padding: 1em;
 }
 
-.nav-ul li{
+.nav-ul li {
     display: inline;
 }
 
 
 
-.text1{
-    display: flex;
-    flex-direction: column;
+.text1 {
+    top: 40%;
     justify-content: center;
     align-items: center;
     font-weight: 100;
@@ -80,30 +82,31 @@ nav{
     margin-bottom: 2em;
 }
 
-#line1{
+#line1 {
     font-weight: 800;
     margin-bottom: 0.5em;
 }
 
 
-.btn{
+.btn {
     width: 6em;
     margin-right: 1em;
     transition: all 0.2s ease;
 }
 
-.join{
+.join {
     color: white;
     border: 1px solid white;
     background-color: transparent;
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(1.1);
 }
 
 
-.img2{
-    background:url('./assets/hand.jpg');
+.img2 {
+    background: url('./assets/hand.jpg');
     height: 100vh;
     background-size: cover;
     display: flex;
@@ -112,7 +115,7 @@ nav{
     align-items: right;
 }
 
-.right-text{
+.right-text {
     text-shadow: 2px 2px #e8e9e5;
     font-size: 3em;
     color: #41807c;
@@ -123,7 +126,7 @@ nav{
     padding: 0 0.5em 0.5em 0;
 }
 
-.muted-text{
+.muted-text {
     color: #487774;
     font-size: 1.5em;
     text-align: right;
@@ -136,7 +139,7 @@ nav{
 
 
 .text1,
-.img2{
+.img2 {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -144,16 +147,16 @@ nav{
     z-index: -1;
 }
 
-.img2{
+.img2 {
     top: 100%;
 }
 
-.containerr{
+.containerr {
     transform: translateZ(-10px) scale(2);
 }
 
 
-.part3{
+.part3 {
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
@@ -161,7 +164,7 @@ nav{
     justify-content: space-evenly;
 }
 
-.img3-1{
+.img3-1 {
     height: 100vh;
     width: 50vw;
     background-image: url('./assets/leaf.jpg');
@@ -169,7 +172,7 @@ nav{
     background-position: center;
 }
 
-.img3-2{
+.img3-2 {
     width: 50vw;
     height: 100vh;
     display: flex;
@@ -180,7 +183,7 @@ nav{
     background-size: cover;
 }
 
-.r{
+.r {
     border: 1px solid white;
     background-color: #39875f28;
     backdrop-filter: blur(40px);
@@ -194,7 +197,7 @@ nav{
     border-radius: 10px;
 }
 
-.heading{
+.heading {
     border-bottom: 3px solid #39875f;
     font-family: 'Oxygen', sans-serif;
     font-weight: 550;
@@ -204,27 +207,26 @@ nav{
     display: block;
 }
 
-.textarea{
+.textarea {
     font-family: 'Oxygen', sans-serif;
     color: rgba(0, 0, 0, 0.75);
     padding: 1rem;
     font-size: 1.5em;
 }
 
-.wrapper2{
+.wrapper2 {
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
 }
 
-.form-div{
+.form-div {
     transform: translateZ(-10px) scale(2);
 }
 
-.form-div{
+.form-div {
     background: url('./assets/leaves-2.jpg');
-    filter: blur(10px);
     background-size: cover;
     position: absolute;
     height: 100%;
@@ -232,7 +234,25 @@ nav{
     object-fit: cover;
     z-index: -1;
 }
-.form{
 
+.fr {
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    background-color: #39875f28;
+    top: 50%;
 }
 
+.col-12{
+    color: white;
+}
+
+.input-group{
+    margin: 1em;
+}
+input{
+    margin-left: 1em;
+}
+
+.input-group-text{
+    margin-left: 0.5em;
+}
