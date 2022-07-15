@@ -1,5 +1,6 @@
 * {
     /* outline: 1px solid gold; */
+    /* overflow-x: hidden; */
     /* font-family: 'Roboto', sans-serif; */
     padding: 0;
     margin: 0;
@@ -10,9 +11,7 @@ body,
 .wrapper2,
 .img3-2 {
     -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
     scrollbar-width: none;
-    /* Firefox */
 }
 
 /* body::-webkit-scrollbar, */
@@ -20,7 +19,6 @@ body,
 .wrapper2::-webkit-scrollbar,
 .img3-2::-webkit-scrollbar {
     display: none;
-    /* Safari and Chrome */
 }
 
 .outline {
@@ -106,13 +104,14 @@ nav {
 
 
 .img2 {
-    background: url('./assets/hand.jpg');
-    height: 100vh;
+    background: url('./assets/plant.jpg') no-repeat bottom right;
     background-size: cover;
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
+    text-align: left;
     justify-content: center;
-    align-items: right;
+    
 }
 
 .right-text {
@@ -120,21 +119,21 @@ nav {
     font-size: 3em;
     color: #41807c;
     font-family: 'Roboto Slab', serif;
-    text-align: right;
+    text-align: left;
     height: min-content;
-    margin-right: 0.5em;
+    margin-left: 0.5em;
     padding: 0 0.5em 0.5em 0;
 }
 
 .muted-text {
     color: #487774;
     font-size: 1.5em;
-    text-align: right;
+    text-align: left;
     word-wrap: break-word;
     height: min-content;
-    width: 40%;
-    margin-right: 3em;
-    margin-left: auto;
+    width: 50%;
+    margin-left: 1em;
+    margin-right: auto;
 }
 
 
@@ -172,29 +171,35 @@ nav {
     background-position: center;
 }
 
-.img3-2 {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: auto;
-    background: url('./assets/tree-leaves.jpg');
+.rs {
+    box-sizing: border-box;
+    background: url('./assets/brownwall.jpg') bottom center;
     background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.rrs{
+    background-color: aliceblue;
+}
+
+.col-lg{
+    background-color: #39875f28;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 3em;
 }
 
 .r {
-    border: 1px solid white;
-    background-color: #39875f28;
-    backdrop-filter: blur(40px);
-    display: inline-block;
     text-align: center;
-    min-height: 70vh;
-    width: 70vh;
+
+    min-height: 80%;
+
+    display: inline-block;
     margin: 3em 3em;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
 }
 
 .heading {
@@ -214,36 +219,22 @@ nav {
     font-size: 1.5em;
 }
 
-.wrapper2 {
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    perspective: 10px;
-}
 
 .form-div {
-    transform: translateZ(-10px) scale(2);
-}
-
-.form-div {
-    background: url('./assets/leaves-2.jpg');
+    background: url('./assets/top-down-plant.jpg') bottom right;
     background-size: cover;
-    position: absolute;
-    height: 100%;
     width: 100%;
-    object-fit: cover;
-    z-index: -1;
 }
 
-.fr {
+.fr{
     height: 100vh;
-    backdrop-filter: blur(10px);
-    background-color: #39875f28;
-    top: 50%;
 }
 
-.col-12{
-    color: white;
+
+.col-md-6{
+    border-radius: 0%;
+    margin-top: 4em;
+    margin-bottom: 4em;
 }
 
 .input-group{
